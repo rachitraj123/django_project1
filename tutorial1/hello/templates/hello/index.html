@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RachitFitness</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="gymlogo1.png" />
+        <p>Rachit Fitness</p>
+      </div>
+      <div class="navbar">
+        <ul>
+          <li class="option1" id="op1"><a href="./index.html">Home<img src="up.png" height="20px" id="img1"></img></a></li>
+          <li class="option2" id="op2"><a href="#" class="about_Us">About_Us<img src="up.png" height="20px"id="img1"></img></a></li>
+          <li class="option3" id="op3" name="fitness_calculator">
+            <a href="#" class="FitnessCalcuator">Fitness_Calcuator<img src="up.png" height="20px" id="img1"></img></a>
+          </li>
+          <li class="option4" id="op4"><a href="#" class="Contact_Us">Contact_Us<img src="up.png" height="20px" id="img1"></img></a></li>
+        </ul>
+      </div>
+      <div class="callus">
+        <button><a href="phone:+918084427159">Call_us</a></button>
+      </div>
+    </header>
+    <main class="main">
+        <div>
+            <h2>Fill the form to cantact us</h2>
+            <form action="" class="form" id="form1">
+                <div class="div1">
+                    <label for="Name" class="Name">Name:</label>
+                    <input type="name" class="inputname" id="Name" value="" placeholder="Your Name" >
+                </div>
+                <div class="div2">
+                    <label for="Email" class="email">Email:</label>
+                    <input type="email" class="inputemail" id="Email" value="" placeholder="Your Email" >
+                </div>
+                <div class="div3">
+                    <label for="Phone" class="Phone">Phone Number:</label>
+                    <input type="text" class="inputphone" id="Phone" vlaue="" placeholder="your phone Number" >
+                </div>
+                <div class="div4">
+                    <label for="Messages" class="Messages">Messages:</label>
+                    <input class="inputmessage" id="Messages" rows="10" cols="50" placeholder="Messages">
+                </div>
+                <div class="button">
+                    <input type="submit"class="submit" id="submit"></button>
+                </div>
+            </form>
+        </div>
+    </main>
+    <script>
+        document.getElementById("submit").onclick=function click(){
+          var value1=document.getElementById("Name")
+          var value2=document.getElementById("email")
+          var value3=document.getElementById("phone")
+          var value4=document.getElementById("Message")
+          if (value1 || value2 || value3 || value4 == ""){
+            document.alert("Please enter all the vales of the form")
+          } 
+        }
+        click()
+    </script>
+  </body>
+</html>

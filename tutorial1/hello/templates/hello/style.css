@@ -1,0 +1,207 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    background-image: url("bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0%;
+    color: antiquewhite;
+  }
+  header {
+    width: 100%;
+    display: flex;
+    position: relative;
+  }
+  header div {
+    padding-left: 50px;
+  }
+  header .logo {
+    width: fit-content;
+    padding-left: 0;
+  }
+  .logo img {
+    margin-left: 50px;
+    width: 100px;
+    filter: invert(100%);
+  }
+  .logo p {
+    margin-top: 2px;
+    color: rgb(97, 96, 94);
+    font-size: 3rem;
+    text-align: center;
+  }
+  .navbar {
+    position: fixed;
+    display: block;
+    width: fit-content;
+    height: fit-content;
+    margin-top: 40px;
+    padding-left: 0;
+    margin-left: 400px;
+    border: 2px solid silver;
+    border-radius: 20px;
+  }
+  .navbar ul {
+    display: flex;
+  }
+  .navbar ul li {
+    list-style: none;
+    border: none;
+    border-right: 2px solid silver;
+    padding: 10px 13px;
+    padding-right: 10px;
+    transition-duration: 0.2s;
+    border-right: none;
+  }
+  .navbar ul li img {
+    margin-left: 15px;
+    filter: invert(100%);
+    width: 12px;
+  }
+  .navbar ul li:hover {
+    background-color: aliceblue;
+    border-radius: 20px;
+    box-shadow: 2px 4px rgb(80, 78, 78);
+    opacity: 2;
+  }
+  .navbar ul li a {
+    text-decoration: none;
+    padding: 10px 10px;
+    color: rgb(205, 202, 196);
+    font-size: 1rem;
+    padding-right: 20px;
+    transition-duration: 0.5s;
+  }
+  .navbar ul li a:hover {
+    color: black;
+    font-weight: bolder;
+    filter: url("up.png");
+    font-size: 1.2rem;
+  }
+  .callus {
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding-left: 70px;
+    margin-top: 40px;
+  }
+  .callus button a {
+    text-decoration: none;
+    color: black;
+  }
+  .callus button {
+    padding: 10px 70px;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    background-color: silver;
+    cursor: pointer;
+    position: relative;
+    perspective: 1000px;
+    transition-duration: 0.2s;
+    opacity: 0.5;
+  }
+  button:hover {
+    box-shadow: 2px 4px rgb(80, 78, 78);
+    opacity: 2;
+    transform: rotateX(10deg) rotateY(10deg);
+  }
+  .main {
+    width: 50%;
+    border: 2px solid silver;
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+    margin-top: 20px;
+  }
+  .main {
+    padding-top: 20px;
+    width: fit-content;
+  }
+  .main div .form {
+    padding: 10px 10px;
+    width: fit-content;
+  }
+  @keyframes name {
+    0% {
+      /* Start state */
+      transform: translateX(0);
+    }
+    50% {
+      /* Middle state */
+      transform: translateX(100px);
+    }
+    100% {
+      /* End state */
+      transform: translateX(0);
+    }
+  }
+  @media screen and(max-width:1000px) {
+      .navbar ul{
+          display:flex ;
+          flex-direction: column;
+      }
+      
+  }
+  
+  /* Apply the animation to an element */
+  /* .main:hover {
+   animation: name;
+    animation-timing-function: linear;
+    animation-duration: 0.5s;
+    animation-delay: 0.2s;
+    animation-iteration-count: infinite;
+  } */ 
+  .main .form div {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+    font-size: 1.2rem;
+  }
+  .main div h2 {
+    font-size: 1.2rem;
+    color: rgb(213, 226, 226);
+    text-align: center;
+  }
+  .main .form div label {
+    padding: 10px 0;
+    color: rgb(213, 226, 226);
+    font-size: 1.2em;
+  }
+  .main .form div input {
+    padding: 10px;
+    opacity: 0.5;
+    font-weight: bolder;
+    border: none;
+    width: 80%;
+    color: rgb(213, 226, 226);
+    font-size: 1.2rem;
+    background-color: gray;
+    transition-duration: 0.2s;
+    transition-delay: 0.1s;
+    border-radius: 20px;
+  }
+  .main .form div input:active,
+  .main .form div input:hover {
+    transform: scale(1.1);
+    opacity: 2;
+    color: black;
+  }
+  .button {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+  }
+  .button input {
+    width: 50%;
+    color: black;
+    cursor: pointer;
+    padding: 10px;
+    margin: 10px;
+    margin-left: 0;
+    background-color: whitesmoke;
+  }
